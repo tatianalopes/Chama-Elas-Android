@@ -29,3 +29,6 @@
 /captures
 .externalNativeBuild
 .cxx
+
+# firebase configuration file
+app/google-services.json
