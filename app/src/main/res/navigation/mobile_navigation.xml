@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.tcal.chamaelas.home.HomeFragment"
+        android:label="@string/screen_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_calendar"
+        android:name="com.tcal.chamaelas.calendar.CalendarFragment"
+        android:label="@string/screen_calendar"
+        tools:layout="@layout/fragment_calendar" />
+
+    <fragment
+        android:id="@+id/nav_favorites"
+        android:name="com.tcal.chamaelas.favorites.FavoritesFragment"
+        android:label="@string/screen_favorites"
+        tools:layout="@layout/fragment_favorites" />
+
+    <fragment
+        android:id="@+id/nav_settings"
+        android:name="com.tcal.chamaelas.settings.SettingsFragment"
+        android:label="@string/screen_settings"
+        tools:layout="@layout/fragment_settings" />
+</navigation>

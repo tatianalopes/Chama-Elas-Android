@@ -18,4 +18,9 @@
         <item name="android:textColor">@color/colorText</item>
     </style>
 
+    <style name="ThemeOverlay.AppCompat.navTheme">
+        <!-- Color of text and icon when SELECTED -->
+        <item name="colorPrimary">@color/colorText</item>
+    </style>
+
 </resources>
