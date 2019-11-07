@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Chama Elas</string>
+
+    <string name="screen_home">Página inicial</string>
+    <string name="screen_calendar">Agenda</string>
+    <string name="screen_favorites">Favoritas</string>
+    <string name="screen_settings">Configurações</string>
 </resources>
