@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/professional_card"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/margin_default"
+    app:cardCornerRadius="@dimen/card_corner_radius"
+    app:cardElevation="@dimen/card_elevation">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/margin_default">
+
+        <RelativeLayout
+            android:id="@+id/professional_general_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/professional_image"
+                android:layout_width="@dimen/professional_image_size"
+                android:layout_height="@dimen/professional_image_size"
+                android:layout_centerVertical="true"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_toEndOf="@id/professional_image"
+                android:layout_toStartOf="@id/professional_favorite"
+                android:layout_marginStart="@dimen/margin_default">
+
+                <TextView
+                    android:id="@+id/professional_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_large"/>
+
+                <TextView
+                    android:id="@+id/professional_specialty"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_medium"/>
+
+                <RatingBar
+                    android:id="@+id/professional_rating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_default"
+                    android:numStars="5"
+                    style="@android:style/Widget.DeviceDefault.RatingBar.Small"/>
+
+            </LinearLayout>
+
+            <ToggleButton
+                android:id="@+id/professional_favorite"
+                android:layout_width="@dimen/professional_icon_size"
+                android:layout_height="@dimen/professional_icon_size"
+                android:layout_alignParentEnd="true"
+                android:textOn=""
+                android:textOff=""
+                android:background="@drawable/favorite_toggle"
+                android:stateListAnimator="@null" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/professional_location_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/margin_large"
+            android:layout_below="@id/professional_general_info">
+
+            <ImageView
+                android:layout_width="@dimen/professional_icon_size"
+                android:layout_height="@dimen/professional_icon_size"
+                android:src="@drawable/ic_icon_location" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/professional_practice_area"
+                android:textColor="@color/gray"
+                android:textStyle="bold"
+                android:layout_marginStart="@dimen/margin_small"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/margin_small"
+            android:layout_below="@id/professional_location_view">
+
+            <ImageView
+                android:layout_width="@dimen/professional_icon_size"
+                android:layout_height="@dimen/professional_icon_size"
+                android:src="@drawable/ic_icon_clock"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/professional_availability"
+                android:textColor="@color/gray"
+                android:textStyle="bold"
+                android:layout_marginStart="@dimen/margin_small"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

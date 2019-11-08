@@ -1,3 +1,22 @@
 <resources>
     <string name="app_name">Chama Elas</string>
+
+    <string name="screen_home">Página inicial</string>
+    <string name="screen_calendar">Agenda</string>
+    <string name="screen_favorites">Favoritas</string>
+    <string name="screen_account">Conta</string>
+
+    <string name="category_electrical">Elétrica</string>
+    <string name="category_painting">Pintura</string>
+    <string name="category_hydraulics">Hidráulica</string>
+    <string name="category_construction">Construção</string>
+    <string name="category_general_services">Serviços gerais</string>
+    <string name="category_others">Outros</string>
+
+    <string name="home_categories">Categorias</string>
+
+    <string name="professional_practice_area">Locais</string>
+    <string name="professional_availability">Horários</string>
+
+    <string name="account_about">Sobre</string>
 </resources>

@@ -5,6 +5,7 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
         <item name="android:windowLightStatusBar">true</item>
+        <item name="android:textColor">@color/colorText</item>
     </style>
 
     <!-- Toolbar -->
@@ -16,6 +17,11 @@
 
     <style name="ActionMenuItem">
         <item name="android:textColor">@color/colorText</item>
+    </style>
+
+    <style name="ThemeOverlay.AppCompat.navTheme">
+        <!-- Color of text and icon when SELECTED -->
+        <item name="colorPrimary">@color/colorText</item>
     </style>
 
 </resources>

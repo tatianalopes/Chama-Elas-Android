@@ -8,4 +8,12 @@
     <color name="colorEnd">#c5cfdb</color>
 
     <color name="black">#000000</color>
+    <color name="gray">#61000000</color>
+
+    <color name="category_electrical">#DBD829</color>
+    <color name="category_painting">#94D8ED</color>
+    <color name="category_hydraulics">#6EBEC5</color>
+    <color name="category_construction">#FFE46F</color>
+    <color name="category_general_services">#FFD368</color>
+    <color name="category_others">#FF764C</color>
 </resources>
