@@ -1,14 +1,14 @@
-package com.tcal.chamaelas.settings;
+package com.tcal.chamaelas.account;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-public class SettingsViewModel extends ViewModel {
+public class AccountViewModel extends ViewModel {
 
     private MutableLiveData<String> mText;
 
-    public SettingsViewModel() {
+    public AccountViewModel() {
         mText = new MutableLiveData<>();
         mText.setValue("This is settings fragment");
     }
