@@ -14,4 +14,7 @@
     <string name="category_others">Outros</string>
 
     <string name="home_categories">Categorias</string>
+
+    <string name="professional_practice_area">Locais</string>
+    <string name="professional_availability">Horários</string>
 </resources>

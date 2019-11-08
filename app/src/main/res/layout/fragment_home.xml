@@ -8,8 +8,8 @@
         android:id="@+id/categories_label"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/default_margin"
-        android:layout_marginVertical="@dimen/default_margin"
+        android:layout_marginStart="@dimen/margin_default"
+        android:layout_marginVertical="@dimen/margin_default"
         android:text="@string/home_categories"
         android:textSize="@dimen/text_medium"
         android:textStyle="bold"/>

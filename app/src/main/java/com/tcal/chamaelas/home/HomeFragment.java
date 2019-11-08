@@ -1,10 +1,10 @@
 package com.tcal.chamaelas.home;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -15,6 +15,8 @@ import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.tcal.chamaelas.R;
+import com.tcal.chamaelas.home.category.ProfessionalActivity;
+import com.tcal.chamaelas.util.Constants;
 
 public class HomeFragment extends Fragment {
 
@@ -36,8 +38,15 @@ public class HomeFragment extends Fragment {
         return root;
     }
 
+    /**
+     * Initializes the screen views
+     */
     private void initViews(View root) {
-        CategoryAdapter adapter = new CategoryAdapter();
+        CategoryAdapter adapter = new CategoryAdapter(categoryType -> {
+            Intent intent = new Intent(getContext(), ProfessionalActivity.class);
+            intent.putExtra(Constants.CATEGORY_TYPE, categoryType);
+            startActivity(intent);
+        });
 
         RecyclerView recyclerView = root.findViewById(R.id.category_recycler_view);
         recyclerView.setLayoutManager(new GridLayoutManager(getContext(), 2));
