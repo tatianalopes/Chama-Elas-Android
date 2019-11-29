@@ -13,10 +13,45 @@
     <string name="category_general_services">Serviços gerais</string>
     <string name="category_others">Outros</string>
 
+    <string name="button_ok">OK</string>
+    <string name="button_send">Enviar</string>
+    <string name="button_cancel">Cancelar</string>
+    <string name="button_create_account">Criar conta</string>
+    <string name="button_try_again">Tentar novamente</string>
+
+    <string name="error_invalid_email">Email inválido</string>
+    <string name="error_no_record_email">Esse email não está cadastrado</string>
+
     <string name="home_categories">Categorias</string>
 
     <string name="professional_practice_area">Locais</string>
     <string name="professional_availability">Horários</string>
 
     <string name="account_about">Sobre</string>
+    <string name="account_login">Entrar</string>
+
+    <string name="login_invalid_user_dialog_title">Usuário não encontrado</string>
+    <string name="login_invalid_user_dialog_content">O email <b>%1$s</b> não está associado a nenhuma conta. Se você não possui uma conta no Chama elas, você pode criar uma agora.</string>
+    <string name="login_wrong_password_dialog_title">Senha incorreta</string>
+    <string name="login_wrong_password_dialog_content">A senha informada está incorreta. Por favor tente novamente.</string>
+    <string name="login_error_snackbar">Error ao fazer login. Tente novamente mais tarde</string>
+    <string name="login_forgot_password">Esqueci minha senha</string>
+    <string name="login_password_dialog_title">Esqueceu a sua senha?</string>
+    <string name="login_password_dialog_message">Insira o seu email para recuperar a sua senha.</string>
+    <string name="login_change_password_snackbar_success">Email enviado com sucesso</string>
+    <string name="login_change_password_snackbar_error">Falha ao enviar email</string>
+    <string name="login_password_hint">Email</string>
+    <string name="login_register_message">Não tem cadastro ainda?\u0020</string>
+    <string name="login_register">Cadastre-se</string>
+    <string name="login_google_button">Continuar com o Google</string>
+
+    <string name="email_field">Email</string>
+    <string name="password_field">Senha</string>
+    <string name="name_field">Nome</string>
+    <string name="surname_field">Sobrenome</string>
+
+    <string name="register_screen">Cadastro</string>
+    <string name="register_error_duplicate">Já existem uma conta com esse email</string>
+    <string name="register_error_empty">Campo vazio</string>
+    <string name="register_snackbar_error">Falha ao registrar usuários</string>
 </resources>

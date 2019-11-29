@@ -5,24 +5,51 @@
     android:layout_margin="@dimen/margin_large">
 
     <RelativeLayout
-        android:id="@+id/account_info"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        android:id="@+id/account_info_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/selectableItemBackground">
 
         <ImageView
             android:id="@+id/account_image"
             android:layout_width="@dimen/professional_image_size"
             android:layout_height="@dimen/professional_image_size"
-            android:src="@drawable/mock_avatar"
+            android:src="@drawable/ic_user"
             android:layout_centerVertical="true"/>
 
+        <LinearLayout
+            android:id="@+id/account_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerInParent="true"
+            android:layout_toEndOf="@id/account_image"
+            android:layout_marginStart="@dimen/margin_default">
+
+            <TextView
+                android:id="@+id/account_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_large"/>
+
+            <TextView
+                android:id="@+id/account_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_medium"/>
+
+        </LinearLayout>
+
         <TextView
-            android:id="@+id/account_email"
+            android:id="@+id/account_login"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/margin_default"
+            android:layout_centerInParent="true"
             android:layout_toEndOf="@id/account_image"
-            android:textColor="@color/colorAccent"/>
+            android:text="@string/account_login"
+            android:textSize="@dimen/text_large"
+            android:visibility="gone"/>
 
     </RelativeLayout>
 

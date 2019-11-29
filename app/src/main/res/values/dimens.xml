@@ -15,4 +15,6 @@
 
     <dimen name="professional_image_size">70dp</dimen>
     <dimen name="professional_icon_size">20dp</dimen>
+
+    <dimen name="text_field_width">250dp</dimen>
 </resources>
